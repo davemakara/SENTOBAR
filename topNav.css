@@ -1,0 +1,141 @@
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #222227;
+}
+
+header nav {
+  width: 100%;
+  height: 80px;
+  background-color: #222227;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 9;
+}
+
+header nav img {
+  width: 200px;
+  height: 35%;
+}
+
+header nav .navRight {
+  display: flex;
+  align-items: center;
+}
+
+header nav .navRight li {
+  /* color: white;
+  font-size: 10px;
+  padding: 20px 10px;
+  margin: 0 5px;
+  cursor: pointer; */
+  position: relative;
+  padding: 30px 0;
+  /* margin: 0 5px; */
+}
+
+.navRight li:hover .dropDownBox {
+  display: block;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 11px;
+  padding: 10px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+header nav .navRight button {
+  color: white;
+  background-color: #9e8a78;
+  font-family: open sans, serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin: 0 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.navRight i {
+  color: white;
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.dropDownBox {
+  width: 220px;
+  padding: 0;
+  background-color: #222227;
+  color: #212529;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: none;
+}
+
+.dropDownBox li {
+  color: white;
+  border-bottom: 1px solid #303133;
+  padding: 15px !important;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.dropDownBox li a {
+  margin: 0;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+
+.dropDownBox .lastChild {
+  border-bottom: none;
+}
+
+.dropDownBox li:hover {
+  background-color: #9e8a78;
+}
+
+.dropDownBox li:hover a {
+  margin: 0 0 0 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  header nav {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .navRight li {
+    display: none;
+  }
+
+  .navRight i {
+    display: block;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header nav {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  header nav img {
+    width: 150px;
+    height: 25%;
+  }
+
+  .navRight button {
+    display: none;
+  }
+}

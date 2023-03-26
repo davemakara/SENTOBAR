@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
+}
+
+main {
+  width: 100%;
+}
+
+header,
+header nav {
+  background-color: #222227;
+  height: 70px;
+}
+
+header nav {
+  padding: 0;
+}
+
+header nav img {
+  height: 30%;
+  cursor: pointer;
+}
+
+header a,
+header button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header button {
+  background-color: #9e8a78;
+  border: none;
+  border-radius: 30px;
+}
+
+.topUl {
+  margin-bottom: 0;
+}
+
+.topUl li {
+  display: flex;
+}
+
+.topUl li a,
+.topUl button,
+.topUl i {
+  color: white;
+  font-size: 10px;
+}
+
+.topUl i {
+  color: white;
+  font-size: 17px;
+  padding: 7px;
+  margin-right: 9px;
+  cursor: pointer;
+  /* display: none; */
+}
+
+.dropDownMenu {
+  top: 100%;
+  left: 0;
+  width: 13.5rem;
+  background-color: #222227;
+  display: none;
+}
+
+.dropDownMenu li a {
+  margin-left: 0;
+  transition: 0.5s ease;
+}
+
+.dropDownMenu li {
+  cursor: pointer;
+  border-bottom: 1px solid #303133;
+}
+
+.dropDownMenu li:hover {
+  background-color: #9e8a78;
+}
+
+.dropDownMenu li:hover a {
+  margin-left: 5px;
+}
+
+.topUl li:hover .dropDownMenu {
+  display: block;
+}
+
+.burgerMenu {
+  width: 100%;
+  background-color: #222227;
+}
+
+.burgerMenu ul {
+  margin-bottom: 0;
+}
+
+.burgerMenu ul li {
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+.burgerMenu ul li a {
+  color: white;
+}
+
+.burgerMenu ul li:hover {
+  background-color: #9e8a78;
+}
+
+.sliderCaption {
+  width: 15rem;
+  color: white;
+  padding: 20px;
+  top: 10%;
+  left: 12%;
+}
+
+.sliderCaption h1 {
+  font-size: 0.8rem;
+}
+
+.sliderButtons button {
+  color: white;
+  background-color: #9e8a78;
+
+  font-size: 7px;
+  padding: 4px 10px;
+}
+
+.underSlider {
+  width: 90%;
+}
+
+.underSliderLeft,
+.underUnderSlider {
+  width: 100%;
+  text-align: center;
+}
+
+.underSliderLeft h4,
+.underSliderLeft p,
+.underUnderSlider h4,
+.underUnderSlider p {
+  color: #777;
+  font-size: 0.7rem;
+}
+.underSliderLeft h2,
+.underUnderSlider h2 {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.underSliderRight {
+  width: 100%;
+}
+
+.servicesWrapper {
+  width: 85%;
+  margin-top: 30px;
+}
+
+.service {
+  width: 100%;
+  text-align: center;
+  background-color: #fcf9f7;
+  padding: 60px 10px 10px;
+  margin-bottom: 20px;
+}
+
+.service img {
+  height: 60px;
+  width: 60px;
+}
+
+.service h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.service p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.booking {
+  height: auto;
+  background-image: url(./img/bckimg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 20px 10px;
+}
+
+.booking .description {
+  color: white;
+  text-align: center;
+}
+
+.description h2 {
+  font-weight: bold;
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.description p {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.booking .formDiv {
+  background-color: #fcf9f7;
+  padding: 35px 25px;
+}
+
+.booking .formDiv .formHeading h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+.booking .formDiv .formHeading p {
+  font-size: 14px;
+  color: #777;
+  padding: 10px 0;
+}
+
+.booking .formDiv form input,
+.booking .formDiv form select {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.booking .formDiv form button {
+  color: white;
+  background-color: #9e8a78;
+  border: none;
+  padding: 10px 15px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 575px) {
+  header nav {
+    padding: 0 50px;
+  }
+
+  .sliderCaption {
+    width: 25rem;
+  }
+  .sliderCaption h1 {
+    font-size: 1.5rem;
+  }
+  .sliderCaption p {
+    font-size: 12px;
+  }
+  .sliderButtons button {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  .underSlider {
+    width: 80%;
+  }
+
+  .underSliderLeft h4,
+  .underSliderLeft p,
+  .underUnderSlider h4,
+  .underUnderSlider p {
+    font-size: 0.9rem;
+  }
+
+  .servicesWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .service {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .booking {
+    display: flex;
+    align-items: center;
+  }
+
+  .description {
+    padding: 40px;
+  }
+  .description h2 {
+    font-size: 45px;
+  }
+
+  .booking .formDiv {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .sliderCaption {
+    width: 35rem;
+  }
+
+  .sliderCaption h1 {
+    font-size: 2.5rem;
+  }
+
+  .underSliderLeft h2,
+  .underUnderSlider h2 {
+    font-size: 2.3rem;
+  }
+
+  .servicesWrapper {
+    display: flex;
+  }
+
+  .booking {
+    padding: 60px 80px;
+  }
+
+  .booking .formDiv {
+    padding: 50px 30px;
+  }
+
+  .booking .formDiv .formHeading h2 {
+    font-size: 38px;
+  }
+
+  .booking .formDiv form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .booking .formDiv form input,
+  .booking .formDiv form select {
+    margin-bottom: 0;
+  }
+
+  .booking .formDiv form button {
+    padding: 15px 20px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1620px) {
+  .sliderCaption h1 {
+    font-size: 3rem;
+  }
+  .sliderCaption p {
+    font-size: 17px;
+  }
+  .underSliderLeft h2 {
+    font-size: 2.9rem;
+  }
+}
