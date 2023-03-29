@@ -1,5 +1,4 @@
 .barbersWrapper {
-  /* background-color: aquamarine; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,7 +62,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 30vh;
 }
 
@@ -88,6 +87,153 @@
   font-size: 10px;
   font-weight: 500;
   line-height: 1.2em;
+}
+
+.plansAndPricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.stylingBox {
+  background-color: #fcf9f7;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 10px;
+  width: 100%;
+}
+
+.stylingBox img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.stylingBox h3 {
+  padding: 20px 0 5px;
+  color: #222222;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.stylingBox h5 {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stylingBox p {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+}
+
+.stylingBox button {
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #938a78;
+  padding: 10px 25px;
+  color: #fff;
+  margin-top: 30px;
+  border: none;
+}
+
+.justBackground {
+  background-image: url(./img/justbackg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.justBackground h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.justBackground p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.articlesWrapper {
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+.articlesWrapper article {
+  margin: 10px;
+}
+
+.articleImg {
+  width: 100%;
+}
+
+.articleImg img {
+  width: 100%;
+}
+
+.articleDescription {
+  padding: 20px 30px 20px 20px;
+  background-color: #fcf9f7;
+}
+
+.articleDescription p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+  margin-bottom: 8px;
+}
+
+.articleDescription h3 {
+  font-size: 25px;
+  line-height: 35px;
+  color: #222;
+}
+
+.articleDescription h3:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.articleDescription h5 {
+  font-size: 16px;
+  color: #222;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.brands {
+  height: 130px;
+  background-color: #fcf9f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second,
+.third,
+.fourth,
+.fifth {
+  display: none;
 }
 
 @media only screen and (min-width: 567px) {
@@ -115,9 +261,51 @@
     font-weight: 500;
     line-height: 1.2em;
   }
+
+  .second {
+    display: block;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .third {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 800px) {
+  #carouselExampleIndicators {
+    background-attachment: fixed;
+  }
+
+  .plansAndPricing {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .stylingBox {
+    width: 30%;
+  }
+
+  .justBackground {
+    display: flex;
+  }
+
+  .articlesWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .articlesWrapper article {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .fourth {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -141,7 +329,28 @@
     font-weight: 500;
     line-height: 1.2em;
   }
+
+  .plansAndPricing {
+    width: 100%;
+  }
+
+  .stylingBox {
+    width: 26%;
+  }
+
+  .articlesWrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .fifth {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 1620px) {
+  .articlesWrapper article {
+    width: 25%;
+  }
 }
