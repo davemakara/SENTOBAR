@@ -236,6 +236,142 @@
   display: none;
 }
 
+footer {
+  width: 100%;
+  background-color: #222227;
+  margin-top: 30px;
+}
+
+.footerTop {
+  padding: 10px 5px;
+  display: block;
+}
+
+.footerContact,
+.recentPosts,
+.newsLetter {
+  padding: 30px;
+  background-color: #222227;
+  margin-bottom: 10px;
+}
+
+.footerContact img {
+  width: 230px;
+}
+
+.footerContact h5 {
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.footerContact p {
+  color: #777777;
+  padding-bottom: 10px;
+}
+
+.iconsWrapper {
+  font-weight: 500;
+  color: #999;
+  font-size: 14px;
+}
+
+.iconsWrapper i {
+  margin-right: 12px;
+}
+
+.iconsWrapper i:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.recentPosts {
+  padding-right: 100px;
+}
+
+.recentPosts h4 {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.disc li {
+  list-style-type: disc;
+  /* list-style-position: inside; */
+  font-weight: 500;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.disc li:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.newsLetter h2 {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.subscribe input {
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+  /* width: 200px; */
+}
+
+.subscribe button {
+  background-color: #9e8a78;
+  color: #fff;
+  border: none;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 50px;
+  padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+  /* width: 30%; */
+}
+
+.footerBott {
+  background-color: #222227;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border-top: 1px solid #303133;
+}
+
+.footerBott p {
+  font-size: 11px;
+}
+
+.scrollUp {
+  padding: 8px 13px;
+  background-color: #9e8a78;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 25px;
+  right: 40px;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+.scrollUp:hover {
+  bottom: 30px;
+}
+
 @media only screen and (min-width: 567px) {
   .barberImg {
     margin: 10px;
@@ -264,6 +400,10 @@
 
   .second {
     display: block;
+  }
+
+  .footerBott p {
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -300,11 +440,33 @@
   .articlesWrapper article {
     width: 30%;
   }
+
+  .footerTop {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 30px 0;
+    /* flex-wrap: wrap; */
+  }
+  .recentPosts {
+    padding-right: 50px;
+  }
+
+  .scrollUp {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 900px) {
   .fourth {
     display: block;
+  }
+  .recentPosts h4 {
+    font-size: 25px;
+  }
+
+  .disc li {
+    font-size: 16px;
+    line-height: 1.6;
   }
 }
 
